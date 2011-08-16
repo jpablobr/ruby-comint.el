@@ -86,7 +86,7 @@ and switch to the process buffer."
   (goto-char (point-min)))
 
 (defun switch-to-ruby-compile (eob-p)
-  "Switch to the *ruby-execution* buffer.
+  "Switch to the *Ruby-Execution* buffer.
 With argument, positions cursor at end of buffer."
   (interactive "P")
   (if eob-p ( pop-to-buffer ruby-comint-buffer-name)
@@ -100,6 +100,7 @@ With argument, positions cursor at end of buffer."
   "Key map for Ruby Comint minor mode.")
 
 (define-key ruby-comint-minor-mode-map "r" 'ruby-compile-region)
+(define-key ruby-comint-minor-mode-map "f" 'ruby-compile-file)
 
 (define-minor-mode ruby-comint-minor-mode
   "Enable Ruby Comint minor mode providing some key-bindings
