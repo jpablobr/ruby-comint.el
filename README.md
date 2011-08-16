@@ -10,12 +10,6 @@ This minor mode exists to allow [Emacs](http://www.gnu.org/software/emacs/) to e
      ruby-compile-file
      ruby-compile-region
 
-
-### Key binding:
-
-    (define-key ruby-comint-minor-mode-map "r" 'ruby-compile-region)
-    (define-key ruby-comint-minor-mode-map "f" 'ruby-compile-file)
-
 ## Installation:
 
 In your emacs config:

@@ -29,8 +29,8 @@
 ;;
 ;; Functions:
 ;;
-;;     ruby-compile-file
-;;     ruby-compile-region
+;;     M-x ruby-compile-file
+;;     M-x ruby-compile-region
 ;;
 ;; Installation:
 ;;
@@ -43,6 +43,8 @@
 ;;
 ;;     (add-to-list 'load-path "~/.emacs.d/vendor/ruby-comint")
 ;;     (require 'ruby-comint)
+;;
+;; You might also like to add some keybings:
 ;;
 ;;     C-C r -- ruby commands
 ;;     (global-set-key (kbd "C-C r f") 'ruby-compile-file)
@@ -98,9 +100,6 @@ With argument, positions cursor at end of buffer."
   (let ((map (make-sparse-keymap)))
     map)
   "Key map for Ruby Comint minor mode.")
-
-(define-key ruby-comint-minor-mode-map "r" 'ruby-compile-region)
-(define-key ruby-comint-minor-mode-map "f" 'ruby-compile-file)
 
 (define-minor-mode ruby-comint-minor-mode
   "Enable Ruby Comint minor mode providing some key-bindings
