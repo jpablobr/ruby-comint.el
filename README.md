@@ -1,6 +1,8 @@
 ruby-comint.el
 ==============
 
+## Execute Inline Ruby
+
 This minor mode exists to allow [Emacs](http://www.gnu.org/software/emacs/) to execute ruby processes dumping the results into a compilation buffer.  Useful for executing tests and the like.
 
 ## Functions:
@@ -11,9 +13,8 @@ This minor mode exists to allow [Emacs](http://www.gnu.org/software/emacs/) to e
 
 ### Key binding:
 
-(define-key ruby-comint-minor-mode-map "r" 'ruby-compile-region)
-(define-key ruby-comint-minor-mode-map "f" 'ruby-compile-file)
-
+    (define-key ruby-comint-minor-mode-map "r" 'ruby-compile-region)
+    (define-key ruby-comint-minor-mode-map "f" 'ruby-compile-file)
 
 ## Installation:
 
